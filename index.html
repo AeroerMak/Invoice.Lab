@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice.Lab — Smart Invoice Management</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner container">
+      <a href="#" class="logo">Invoice<span>.Lab</span></a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <a href="#pricing" class="btn btn-primary nav-cta">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container hero-inner">
+      <div class="badge">AI-Powered · Multi-Tenant · Production-Ready</div>
+      <h1>Invoice management,<br /><span class="gradient-text">reimagined with AI.</span></h1>
+      <p class="hero-sub">
+        Create, send, track and analyze invoices in seconds. Paste plain text — our AI handles the rest.
+        Share publicly with passwords, export to PDF, accept payments via Stripe.
+      </p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn btn-primary btn-lg">Start free trial</a>
+        <a href="#features" class="btn btn-ghost btn-lg">See features →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-number">AI</span><span class="stat-label">Invoice parsing</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-number">∞</span><span class="stat-label">Clients &amp; Products</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-number">PDF</span><span class="stat-label">One-click export</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-number">QR</span><span class="stat-label">Shareable links</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Features</div>
+        <h2>Everything your billing workflow needs</h2>
+        <p>From AI-assisted creation to real-time analytics — Invoice.Lab covers the full invoice lifecycle.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card feature-card--highlight">
+          <div class="feature-icon">✦</div>
+          <h3>AI Invoice Parsing</h3>
+          <p>Describe your invoice in plain English. GPT-4o extracts line items, amounts, dates and client details instantly — no manual data entry.</p>
+          <div class="feature-tag">GPT-4o</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📤</div>
+          <h3>Send &amp; Share</h3>
+          <p>Email invoices directly via Resend, or generate a public share link — optionally protected with a password and expiry date.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Analytics Dashboard</h3>
+          <p>Track invoice views, send history, open rates, and payment status. Visual charts powered by Chart.js give you instant insight.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3>Stripe Payments</h3>
+          <p>Accept card payments directly from invoice pages. Subscription plans managed through Stripe with feature-gating per tier.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🗂</div>
+          <h3>Client &amp; Product Management</h3>
+          <p>Maintain a full directory of companies, clients, and products. Re-use them across invoices with a single click.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📄</div>
+          <h3>PDF Export &amp; QR Codes</h3>
+          <p>Generate polished PDFs via jsPDF with your branding. Every invoice gets a scannable QR code pointing to its public page.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <h3>Secure Multi-Tenant Auth</h3>
+          <p>Session-based authentication with HTTP-only cookies. All data is strictly scoped per user — no cross-tenant data leaks.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Subscription Plans</h3>
+          <p>Tiered plans with usage tracking and feature limits — built-in monetization from day one with Stripe billing integration.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section--alt" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">How it works</div>
+        <h2>From text to paid invoice in minutes</h2>
+        <p>Invoice.Lab removes the friction from every step of the invoicing process.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Describe your invoice</h3>
+            <p>Type a plain-text description — "Invoice for 10 hours of design work at $120/hr for Acme Corp, due in 30 days." That's it.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>AI fills the details</h3>
+            <p>GPT-4o parses your text and populates all fields — line items, totals, client info, due date — ready for your review.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Send, share or export</h3>
+            <p>Email it directly, share a secure link with optional password protection, or export a branded PDF with one click.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Track &amp; get paid</h3>
+            <p>Monitor opens, views, and payment status in real time. Accept card payments via Stripe without leaving the platform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="section" id="tech">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Tech Stack</div>
+        <h2>Built on a modern, scalable foundation</h2>
+        <p>Every layer is chosen for performance, developer experience, and production reliability.</p>
+      </div>
+
+      <div class="tech-grid">
+
+        <div class="tech-category">
+          <div class="tech-category-label">Backend</div>
+          <div class="tech-pills">
+            <span class="tech-pill pill--orange">Cloudflare Workers</span>
+            <span class="tech-pill pill--red">Hono</span>
+            <span class="tech-pill pill--blue">tRPC</span>
+            <span class="tech-pill pill--green">Drizzle ORM</span>
+            <span class="tech-pill pill--teal">PostgreSQL</span>
+            <span class="tech-pill pill--teal">Supabase</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="tech-category-label">Frontend</div>
+          <div class="tech-pills">
+            <span class="tech-pill pill--orange">SvelteKit</span>
+            <span class="tech-pill pill--blue">Tailwind CSS</span>
+            <span class="tech-pill pill--yellow">Chart.js</span>
+            <span class="tech-pill pill--red">jsPDF</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="tech-category-label">Services</div>
+          <div class="tech-pills">
+            <span class="tech-pill pill--purple">OpenAI GPT-4o</span>
+            <span class="tech-pill pill--blue">Stripe</span>
+            <span class="tech-pill pill--green">Resend</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="tech-category-label">Database</div>
+          <div class="tech-pills">
+            <span class="tech-pill pill--teal">~12 Tables</span>
+            <span class="tech-pill pill--teal">11 Migrations</span>
+            <span class="tech-pill pill--teal">JSONB</span>
+            <span class="tech-pill pill--teal">Multi-tenant</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="arch-note">
+        <div class="arch-note-icon">⚡</div>
+        <p>Runs on Cloudflare's global edge network — <strong>zero cold starts</strong>, sub-50ms response times worldwide, no servers to manage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section--alt" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Pricing</div>
+        <h2>Simple, transparent plans</h2>
+        <p>Start free. Upgrade as you grow. No hidden fees.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-price">$0<span>/mo</span></div>
+          <p class="pricing-desc">Perfect for freelancers getting started.</p>
+          <ul class="pricing-features">
+            <li>✓ Up to 5 invoices/month</li>
+            <li>✓ PDF export</li>
+            <li>✓ Public share links</li>
+            <li>✓ Basic analytics</li>
+            <li class="dim">✗ AI parsing</li>
+            <li class="dim">✗ Stripe payments</li>
+            <li class="dim">✗ Custom branding</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full">Get started free</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-tier">Pro</div>
+          <div class="pricing-price">$29<span>/mo</span></div>
+          <p class="pricing-desc">For busy professionals and small teams.</p>
+          <ul class="pricing-features">
+            <li>✓ Unlimited invoices</li>
+            <li>✓ AI invoice parsing</li>
+            <li>✓ Stripe payment links</li>
+            <li>✓ Password-protected sharing</li>
+            <li>✓ Full analytics + charts</li>
+            <li>✓ QR codes</li>
+            <li class="dim">✗ Custom branding</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-full">Start Pro trial</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Business</div>
+          <div class="pricing-price">$49<span>/mo</span></div>
+          <p class="pricing-desc">Full power for growing businesses.</p>
+          <ul class="pricing-features">
+            <li>✓ Everything in Pro</li>
+            <li>✓ Custom branding &amp; logo</li>
+            <li>✓ Priority email support</li>
+            <li>✓ Advanced analytics</li>
+            <li>✓ Multiple team members</li>
+            <li>✓ API access</li>
+            <li>✓ SLA guarantee</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full">Contact sales</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>Ready to modernize your invoicing?</h2>
+      <p>Join hundreds of freelancers and businesses using Invoice.Lab to get paid faster.</p>
+      <a href="#pricing" class="btn btn-primary btn-lg">Start for free — no credit card needed</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo">Invoice<span>.Lab</span></a>
+      <p class="footer-copy">© 2026 Invoice.Lab. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
